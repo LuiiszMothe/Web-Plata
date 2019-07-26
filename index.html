@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, 
+	    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+       <meta http-equiv="X-UA-compatible" content="ie-edge">
+        <title>LUIS MOTE</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/enviarmen.css">
+    </head>
+<body>
+
+
+<header>
+    <nav id="nav" class="nav1">
+      <div class="contenedor-nav">
+            
+        <div class="logo">
+           <img src="img/WP.png" alt="">
+        </div>
+        
+<!-- recordar que los botones del menu, son usados para filtrar la seccion y son manupulados desde filtro.js -->
+        
+        <div class="enlaces" id="enlaces">
+           <a href="#" id="enlace-inicio" class="btn-header">inicio</a>
+           <a href="#" id="enlace-equipo" class="btn-header">nuestro trabajo</a>
+           <a href="#" id="enlace-servicio" class="btn-header">servicios</a>
+           <a href="#" id="enlace-trabajo" class="btn-header">proyectos</a>
+           <a href="#" id="enlace-contacto" class="btn-header">contacto</a>
+           
+           <div class="enlaces-redes">
+               <i class="fab fa-facebook facebook-menu"></i>
+               <i class="fab fa-instagram instagram-menu"></i>
+               <i class="fab fa-whatsapp whatsapp-menu"></i>
+           </div>
+        </div>
+           
+           <div class="icono" id="open">
+               <span><i class="fas fa-bars" id="hamburguesa"></i></span>
+           </div>
+            
+      </div>
+    </nav>
+    
+    <div class="textos">
+        <h1>Web plata</h1>
+        <br>
+        <h2>agencia de desarrollo y diseño web</h2>
+        
+        <br><br><br><br><br>
+        
+        <i class="fas fa-angle-double-down" id="flecha_bajar"></i>
+    </div>
+
+</header>
+
+<main>
+   <!-- id equipo sirve para reedirigir desde el menu -->
+    <section class="contenedor" id="equipo">
+        <h3>nuestro trabajo</h3>
+        <br>
+        <div class="card">
+            <div class="content-card">
+                <div class="people">
+                    <img src="img/dise%C3%B1o-web.png" alt="">
+                </div>
+                <div class="texto-team">
+                    <h2>Diseño web</h2>
+                </div>
+            </div>
+            
+            <div class="content-card">
+                <div class="people">
+                    <img src="img/seo.png" alt="">
+                </div>
+                <div class="texto-team">
+                    <h2>Posicionamiento de sEO</h2>
+                </div>
+            </div>
+            
+            <div class="content-card">
+                <div class="people">
+                    <img src="img/adaptable.png" alt="">
+                </div>
+                <div class="texto-team">
+                    <h2>adaptable a dispositivos</h2>
+                </div>
+            </div>
+            
+            <div class="content-card">
+                <div class="people">
+                    <img src="img/social2.png" alt="">
+                </div>
+                <div class="texto-team">
+                    <h2>redes sociales</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about" id="servicio">
+        <h3>nuestros servicios</h3>
+        <p class="after">siempre mejorando para ti</p>
+        <div class="servicios">
+            <div class="caja-servicios">
+                <i class="fas fa-cubes calidad"></i>
+                <h4>servicio de calidad</h4>
+            </div>
+            
+            <div class="caja-servicios">
+                <i class="far fa-clock a-tiempo"></i>
+                <h4>trabajos a tiempo</h4>
+            </div>
+            
+            <div class="caja-servicios">
+                <i class="fas fa-chart-bar productivo"></i>
+                <h4>servicios productivos</h4>
+            </div>
+               
+            <div class="caja-servicios">
+                <i class="far fa-edit disenios"></i>
+                <h4>diseños profesionales</h4>
+            </div>
+        </div>
+    </section>
+    
+    <section class="work contenedor" id="trabajo">
+        <h3>Algunos de nuestros proyectos y paginas web</h3>
+        <p class="after">hacemos de algo simple, algo extraordinario</p>
+        <div class="botones-work">
+            <ul>
+                <li class="filter" data-nombre='todos'>todos</li>
+                <li class="filter" data-nombre='portafolio'>portafolio</li>
+                <li class="filter" data-nombre='negocios'>negocios o empresas</li>
+                <li class="filter" data-nombre='marketing'>marketing</li>
+                <li class="filter" data-nombre='diseño'>diseño</li>
+            </ul>
+        </div>
+        <div class="galeria-work">
+           
+            <div class="cont-work negocios">
+                <div class="img-work">
+                    <img src="img/trabajo-djmote.png" alt="">
+                </div>
+                <div class="textos-work">
+                    <h4>DJ Mote</h4>
+                </div>
+            </div>
+            
+            <div class="cont-work negocios">
+                <div class="img-work">
+                    <img src="img/vracabados.png" alt="">
+                </div>
+                <div class="textos-work">
+                    <h4>acabados VR</h4>
+                </div>
+            </div>
+            
+            <div class="cont-work portafolio">
+                <div class="img-work">
+                    <img src="img/plantilla-portafolio.png" alt="">
+                </div>
+                <div class="textos-work">
+                    <h4>prortafolio</h4>
+                </div>
+            </div>
+            
+            <!-- DISEÑO -->
+            
+            <div class="cont-work diseño">
+                <div class="img-work">
+                    <img src="img/teclado.jpg" alt="">
+                </div>
+                <div class="textos-work">
+                    <h4>diseño</h4>
+                </div>
+            </div>
+            
+            <div class="cont-work diseño">
+                <div class="img-work">
+                    <img src="img/teclado.jpg" alt="">
+                </div>
+                <div class="textos-work">
+                    <h4>diseño</h4>
+                </div>
+            </div>
+            
+            <div class="cont-work diseño">
+                <div class="img-work">
+                    <img src="img/teclado.jpg" alt="">
+                </div>
+                <div class="textos-work">
+                    <h4>diseño</h4>
+                </div>
+            </div>
+            
+            <!-- MARKETING -->
+            
+            <div class="cont-work marketing">
+                <div class="img-work">
+                    <img src="img/5.jpg" alt="">
+                </div>
+                <div class="textos-work">
+                    <h4>marketing</h4>
+                </div>
+            </div>
+            
+            <div class="cont-work marketing">
+                <div class="img-work">
+                    <img src="img/5.jpg" alt="">
+                </div>
+                <div class="textos-work">
+                    <h4>marketing</h4>
+                </div>
+            </div>
+            
+            <div class="cont-work marketing">
+                <div class="img-work">
+                    <img src="img/5.jpg" alt="">
+                </div>
+                <div class="textos-work">
+                    <h4>marketing</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<section class="contacto" id="contacto">
+    
+      
+
+  
+   <div class="footer contenedor">
+      
+            <section class="contact-underline" id="contact">
+    
+        <form action="enviar.php" method="post" class="contact-form">
+               <div class="contact-row">
+                 <div class="contact-column left">
+                  <div>
+                       <label for="useremail">correo</label>
+                   </div>
+                   <div>
+                       <input type="text" class="contact-input-text" id="useremail" name="correo" required>
+                  </div>
+                 </div>
+                 
+                 <!--contacto 2-->
+                 
+                 <div class="contact-column center">
+                  <div>
+                       <label for="username">Nombre</label>
+                   </div>
+                   <div>
+                       <input type="text" class="contact-input-text" id="username" name="nombre" required>
+                  </div>
+                 </div>
+                                 
+                                    <!--telefono-->
+                 
+                 <div class="contact-column right">
+                  <div>
+                       <label for="telefono">telefono</label>
+                   </div>
+                   <div>
+                       <input type="text" class="contact-input-text" id="telefono" name="telefono" required>
+                  </div>
+                 </div>              
+                                 
+                                 
+                                  
+                 <!--contacto 3-->
+                 
+                 <div class="contact-row">
+                  <div class="contact-column escribe">
+                      <div>
+                          <label for="usermessage">Mensaje</label>
+                      </div>
+                       <textarea  name="mensaje" id="usermessage" cols="" rows="3" required></textarea>
+                   </div>
+            <center><div class="text-center">
+                       <input type="submit" value="Enviar" id="btn-enviar">
+                  </div></center>
+                 </div>
+         
+               </div>
+        </form>
+         
+	</section>
+      
+      
+       <div class="enlaces-redes-1">
+               <i class="fab fa-facebook facebook-menu"></i>
+               <i class="fab fa-instagram instagram-menu"></i>
+               <i class="fab fa-whatsapp whatsapp-menu"></i>
+           </div>
+       <p>la pasion e innovacion es lo que nos distingue del resto</p>
+   </div>
+    
+</section>
+
+<footer>
+    <section class="footer-info">
+        <div class="footer-info">
+            <img src="img/logo-letra.png" alt="" class="logo-letra">
+        </div>
+        
+        <div class="footer-info">
+            <div class="footer-column">
+            <h5>servicios</h5><br><br>
+            
+            <ul>
+                <li>Diseño profesional de páginas web</li>
+                <br>
+                <li>estrategias de SEO</li>
+                <br>
+                <li>multimedia audio y video</li>
+            </ul>
+            </div>
+        </div>
+        
+        <div class="footer-info">
+            <div class="footer-column ">
+                <h5>localizados en:</h5><br><br>
+                
+                <p>Ciudad de méxico <br> iztapalapa, el vergel <br>
+                c.p 09880</p>
+            </div>
+        </div>
+        
+        <div class="footer-info">
+            <div class="footer-column ">
+                <h5>nosotros</h5><br><br>
+                
+                <ul class="preguntas">
+                    <a href=""><li>¿quienes somos?</li></a>
+                    <a href=""><li>¿quienes somos?</li></a>
+                    <a href=""><li>¿quienes somos?</li></a>
+                </ul>
+            </div>
+        </div>
+        
+        
+    </section>
+    <!-- 
+      
+       <div class="contacto-informativo">
+        <div class="telefonos-contacto">
+           <h3>telefonos</h3>
+          
+                <p>+52 55 60769486 </p>
+                <p>+52 55 5252 8836</p>
+                <p>+------------</p>
+                
+                <br>
+           
+        </div><div class="correos-contacto">
+           <h3>correos</h3>
+           
+               <p>luis_mote@outlook.com</p>
+               <p>----------</p>
+               <p>----------</p>
+            
+        </div>
+        
+    </div>
+       
+         -->
+       <div class="derechos">
+        <p>© Web Plata 2019.</p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/filtro.js"></script>
+        <script src="js/animaciones.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,639 @@
+:root{
+    --color1: rgb(219, 144, .5);
+    --color2: rgb(0, 177, 255);
+    --color3: rgba(11, 194, 211, 0.6);
+    --fondo: #f2f2f2;
+    --titulos: 33px;
+    --margenes:60px;
+    --espacios:10px;
+    --espacios-contenido:45px;
+}
+
+.fab{
+    color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+font-family: 'Francois One', sans-serif;
+    background: var(--fondo);
+    text-transform: capitalize;
+}
+
+img{
+    vertical-align: top;
+}
+
+/*pre-loader*/
+.hidden{
+    overflow: hidden;
+}
+.centrado{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom,
+    rgba(211, 20, 204, 0.53),
+    rgba(7, 7, 165, 0.6),
+    rgba(0,0,0,4)90%
+    ), url(../img/code.jpg);
+    z-index: 100;
+    display: flex;
+    justify-content: center;/* centrado horizontal*/
+    align-items: center;/* centrado vertical*/
+}
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  width: 13px;
+  background: #cef;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 6px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 26px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 45px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 6px;
+    height: 51px;
+  }
+  50%, 100% {
+    top: 19px;
+    height: 26px;
+  }
+}
+
+
+
+/*----------------------------------------------------------*/
+
+
+/*header*/
+
+header{
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(to bottom,
+    rgba(211, 20, 204, 0.53),
+    rgba(7, 7, 165, 0.6),
+    rgba(0,0,0,4)90%
+    ), url(../img/code.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav1{
+    background: transparent;
+    height: 80px;
+    color: white;
+}
+
+.nav2{
+    background: var(--fondo);
+    opacity: .95;
+    height: 90px;
+    color: black;
+}
+
+.contenedor-nav{
+    display: flex;
+    margin: auto;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    overflow: hidden;
+}
+
+
+nav .enlaces a{
+    display: inline-block;
+    padding: 5px 0px;
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    color: inherit;
+}
+
+
+nav .enlaces a:hover{
+    border-bottom: 3px solid #1498a4;
+    transition: 0.4s;
+}
+
+
+.enlaces-redes{
+    background: linear-gradient(to bottom,
+    rgba(7, 7, 165, 0.6),
+    rgba(0,0,0,5)80%
+    );
+    display: flex;
+    align-self: flex-end;
+    min-height: 10vh;
+    flex-wrap: wrap;
+    display: none;
+    position: fixed;
+    
+}
+
+
+.btn-header{
+    margin:0px 15px;
+    color: white;
+}
+.logo img{
+    width: 80px;
+    padding-top: 10px;
+}
+
+.icono{
+    font-size: 28px;
+    padding: 23px 27px;
+    
+    display: none;
+}
+
+.textos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    text-align: center;
+}
+
+.textos>h1{
+    font-size: 80px;
+    text-shadow: 8px 8px 10px rgb(0, 0, 0);
+}
+
+.textos>h2{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+
+.fa-angle-double-down{
+    font-size: 50px;
+    opacity: 0.5;
+    display: block;
+}
+
+
+
+/*main*/
+
+
+.contenedor{
+    margin: auto;
+    padding: var(--margenes) 0;
+    width: 90%;
+    max-width: 1400px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.contenedor h3, h3{
+    font-size: var(--titulos);
+    margin-bottom: var(--espacios) ;
+    text-align: center;
+}
+
+
+.contenedor p, p.after{
+    font-size: 20px;
+    color: var(--color2);
+    text-align: center;
+}
+
+.after::after{
+    content: '';
+    display: block;
+    margin: auto;
+    margin-top: var(--espacios);
+    width: 100px;
+    height: 3px;
+    background: var(--color2);
+    margin-bottom: var(--espacios-contenido)
+}
+
+.card{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.content-card{
+    width: 23%;
+    box-shadow: 0 0 6px rgba(0,0,0,6);
+    overflow: hidden;
+    height: 400px;
+}
+
+.people{
+    height: 80%;
+}
+
+.content-card img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    background: black
+}
+
+.texto-team{
+    height: 13%;
+    background: white;
+    padding: var(--espacios);
+    box-sizing: content-box;
+    margin: 0px;
+    border: 4px solid #00a7ff;
+    display: flex;
+    flex-direction: column
+}
+
+.texto-team h2{
+    color: black;
+    margin: auto;
+    text-shadow: 10px 7px 15px rgba(0, 0, 0, 0.51);
+    font-size: 21px;
+}
+
+
+.about{
+    background: linear-gradient(to bottom,
+    rgba(211, 20, 204, 0.89),
+    rgba(7, 7, 165, 0.6),
+    rgba(0,0,0,4)90%
+    ), url(../img/teclado.jpg);
+    background-size: cover;
+    
+    width: 100%;   
+}
+
+.about h3{
+    color: black;
+}
+.servicios{
+    display: flex;
+    width: 90%;
+    color: white;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;/* centrado horizontal*/
+    margin: auto;
+
+}
+
+.caja-servicios{
+    margin:0 20px 10px
+}
+
+.caja-servicios>h4{
+    margin-bottom: var(--espacios);
+    text-align: center;
+    font-size: 20px;
+}
+
+/*----------------*/
+
+.botones-work{
+    overflow: hidden;
+}
+.botones-work li{
+    display: inline-block;
+    text-align: center;
+    margin-left: var(--espacios);
+    margin-bottom: var(--espacios-contenido);
+    padding: 6px 12px;
+    border: 1px solid #a000c6;
+    list-style: none;
+    color: #a000c6;
+}
+
+.botones-work li:hover{
+    background: #a000c6;
+    color: white;
+    cursor: pointer;
+}
+.botones-work .active{
+    background: #a000c6;
+    color: white;
+}
+
+.galeria-work{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.galeria-work .cont-work{
+    width: 25%;
+    box-shadow: 0 0 6px rgba(0,0,0,6);
+    height: 300px;
+    overflow: hidden;
+    margin:20px 30px;
+    min-width: 230px;
+    
+}
+
+.img-work{
+    height: 90%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-work img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.textos-work{
+    height: 10%;
+}
+
+.textos-work h4{
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.contacto{
+    background: linear-gradient(25deg,
+    rgba(211, 20, 204, 0.89),
+    rgba(7, 7, 165, 0.6),
+    rgba(0,0,0,4)90%),url(../img/code.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+.enlaces-redes , .enlaces-redes:hover{
+    cursor: pointer;
+}
+
+
+/*footer*/
+
+
+footer{
+    background: rgba(29, 29, 29, 0.78);
+}
+.footer-info{
+    display: flex;
+    padding: 20px;
+    color: white;
+}
+.mas-info{
+    width: 30%
+}
+
+.footer-info h5{
+    font-size: 25px;font-weight: 200;
+    
+}
+.derechos{
+    display: inline-block;
+    color: #000000;
+    font-size: 16px;
+    width: 100%;
+    margin: auto;
+    border-top: 3px solid #00ff0a
+}
+.derechos p{
+    text-align: center;
+    margin: 5px
+}
+
+.logo-letra{
+    width: 500px
+}
+.enlaces-redes-1{
+    font-size: 60px
+    }
+@media screen and (max-width:900px){
+    
+    .logo-letra{
+        width: 300px;
+        height: 100px
+}
+}
+.marca-logo{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--espacios);
+}
+
+.marca-logo img {
+    width: 40%
+
+}
+
+.iconos{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    width: 100%
+}
+
+/* iconos de los servicios*/
+
+.calidad{
+    color: #00ceff;
+    font-size: 60px;
+}
+
+.a-tiempo{
+    font-size: 60px;
+    color: #00ff00;
+}
+
+.productivo{
+    font-size: 60px;
+    color: darkorange;
+}
+
+.disenios{
+    font-size: 60px;
+    color: red;
+}
+
+.fab{
+    font-size: 60px;
+    color: white;
+    margin-bottom: var(--espacios)
+}
+
+@media screen and (max-width: 800px){
+   
+    .footer-info{
+        flex-direction: column;
+        text-align: center;
+        border: 1px solid #6c6c6c;
+    }
+    .logo-letra{
+        width: 50%;
+        margin: auto;
+        height: 150px
+    }
+    
+    .icono{
+        display: block;
+        cursor: pointer;
+    }
+    
+    .enlaces{
+        position: fixed;
+        top: 80px;
+        background: linear-gradient(to bottom,
+    rgba(211, 20, 204, 0.53),
+    rgba(7, 7, 165, 0.6),
+    rgba(0,0,0,5)80%
+    );
+        right: 0;
+        height: 100%;
+        transition: 1s;
+        width: 0%;
+        overflow: hidden;
+    }
+    
+    .enlaces a{
+        display: block;
+        width: 100%;
+        height: 50px;
+        padding: 20px;
+        text-align: center;
+        background: rgba(121, 114, 168, 0.57);
+        color: white;
+    }
+    
+    .enlaces a:hover{
+       background: rgba(196, 196, 196, 0.3);
+        font-size: 22px;
+        color: white;
+    }
+    .textos>h1{font-size: 65px;}
+    .textos>h2{font-size: 35px;}
+    
+    
+    .content-card{
+        width: 40%;
+        margin-bottom: var(--margenes)
+    }
+    
+    :root{
+        --margenes: 30px;
+    }
+    
+    .enlaces-redes{
+        display: flex;
+        position: fixed;
+        width: 105%;
+        top: 87%;
+    }
+    
+    .enlaces-redes i{
+        margin: 10px auto;
+        font-size: 55px;
+        text-shadow: 5px 5px 20px rgb(255, 255, 255);
+    }
+    .facebook-menu{
+        color: rgb(35, 77, 172);
+    }
+    .instagram-menu{
+        background: linear-gradient(to bottom right, #003bff, #f500ff, #ff0000 );
+        -webkit-background-clip: text;  
+        -webkit-text-fill-color: transparent; 
+    }
+    .whatsapp-menu{
+        color: #00ff00;
+    }
+    
+    
+    }
+
+
+@media screen and (max-width: 600px){
+    :root{
+        --espacios-contenido 25px;
+    }
+   
+    
+    .content-card{
+        width: 70%;
+    }
+    
+    .galeria-work .cont-work{
+        width: 80%
+    }
+    
+    .logo-letra{
+        width: 300px
+    }
+
+}
+
+
+
+.contacto-informativo{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    color: white;
+        font-family:sans-serif
+}
+
+.telefonos-contacto{
+    width: 40%;
+    margin: 0 0px;
+    text-align: center;
+    margin: 0 10px;
+}
+.correos-contacto{
+    text-align: center;
+    margin: 0 10px;
+    width: 40%;
+
+}
+
+.correos-contacto p{
+    text-transform: none;
+}
+
+.preguntas  a{
+    color: white;
+    text-decoration: none;
+}
+
